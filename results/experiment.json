@@ -1,0 +1,165 @@
+{
+  "configuration": {
+    "seeds": 20,
+    "rho_bar": 2.0,
+    "c_bar": 0.5,
+    "rule": "0 < c_bar <= rho_bar"
+  },
+  "exact_values": {
+    "state_0_values": {
+      "mu": 0.04050000000000001,
+      "pi": 0.7695,
+      "rho_clipped_corrected_policy": 0.54,
+      "vtrace_fixed_rho_2_c_0.5": 0.54,
+      "vtrace_fixed_rho_inf_c_1": 0.7695000000000001
+    },
+    "fixed_point_bias_vq_minus_vpi_state_0": -0.22949999999999993,
+    "corrected_policy_state_2": [
+      0.6666666666666666,
+      0.3333333333333333
+    ]
+  },
+  "finite_sample_error": {
+    "bootstrap": "exact V_rho_c",
+    "results": [
+      {
+        "horizon": 1,
+        "requested_segments": 64,
+        "actual_transitions_mean": 64.0,
+        "rmse_mean": 0.013314579016412666,
+        "rmse_std": 0.015005443824594143,
+        "bias_mean": 0.0019141184272676286,
+        "bias_std": 0.011422927393281292,
+        "seeds": 20
+      },
+      {
+        "horizon": 1,
+        "requested_segments": 256,
+        "actual_transitions_mean": 256.0,
+        "rmse_mean": 0.009876803642294246,
+        "rmse_std": 0.006786894936476837,
+        "bias_mean": -0.0009994094784911034,
+        "bias_std": 0.006846330772759913,
+        "seeds": 20
+      },
+      {
+        "horizon": 1,
+        "requested_segments": 1024,
+        "actual_transitions_mean": 1024.0,
+        "rmse_mean": 0.004001720424005745,
+        "rmse_std": 0.0030931991654806726,
+        "bias_mean": -5.704994379548043e-05,
+        "bias_std": 0.0029195823526076276,
+        "seeds": 20
+      },
+      {
+        "horizon": 3,
+        "requested_segments": 64,
+        "actual_transitions_mean": 128.65,
+        "rmse_mean": 0.010286984198919949,
+        "rmse_std": 0.006709608152502355,
+        "bias_mean": 0.0036605191131643703,
+        "bias_std": 0.009491935553784402,
+        "seeds": 20
+      },
+      {
+        "horizon": 3,
+        "requested_segments": 256,
+        "actual_transitions_mean": 507.85,
+        "rmse_mean": 0.005716236421534654,
+        "rmse_std": 0.0026017516384060943,
+        "bias_mean": 0.0016010819839814134,
+        "bias_std": 0.0049557560212740714,
+        "seeds": 20
+      },
+      {
+        "horizon": 3,
+        "requested_segments": 1024,
+        "actual_transitions_mean": 2044.9,
+        "rmse_mean": 0.0025037115406261433,
+        "rmse_std": 0.0012317692078818963,
+        "bias_mean": -6.271516966639785e-05,
+        "bias_std": 0.0022783010019340254,
+        "seeds": 20
+      }
+    ]
+  },
+  "bias_variance_counterexample": {
+    "Vmu": 0.16000000000000003,
+    "Vpi": 0.6400000000000001,
+    "V_clipped_fixed": 0.5333333333333333,
+    "fixed_bias_to_pi": -0.1066666666666668,
+    "one_step_from_zero": {
+      "rho_2": {
+        "mean": 0.32000000000000006,
+        "variance": 0.4096000000000001,
+        "mse_to_Vpi": 0.5120000000000002
+      },
+      "rho_inf": {
+        "mean": 0.6400000000000001,
+        "variance": 1.6384000000000003,
+        "mse_to_Vpi": 1.6384000000000003
+      }
+    },
+    "one_step_at_own_fixed_reference": {
+      "rho_2": {
+        "mean": 0.5333333333333334,
+        "variance": 0.07111111111111115,
+        "reference": 0.5333333333333333
+      },
+      "rho_inf": {
+        "mean": 0.64,
+        "variance": 0.10239999999999994,
+        "reference": 0.6400000000000001
+      }
+    },
+    "conclusion": "rho_bar=2 lowers one-step target variance versus rho_bar=inf, but its fixed point is V_q, not V_pi."
+  },
+  "support_gap": {
+    "mu_value_state_0": 0.7695,
+    "pi_value_state_0": 0.7695,
+    "raw_clipped_weights_state_0": [
+      0.0,
+      0.0
+    ],
+    "missing_state_actions": [
+      [
+        0,
+        0
+      ]
+    ],
+    "normalized_corrected_policy_exists": false,
+    "exact_fixed_linear_system_singular": true,
+    "interpretation": "The unsupported target action is never observed; finite IS weights cannot identify it, and adding epsilon would invent a probability."
+  },
+  "c_trace_speed_and_fixed_point": {
+    "c_0.25": {
+      "initial_state_target_after_first_batch": 0.0005766503906250002,
+      "errors_after_each_batch": [
+        1.5239249059879802,
+        1.145277159612344,
+        0.7806680219252294,
+        0.42746249826220906,
+        0.14012604492187514,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_state_0": 0.5904900000000002
+    },
+    "c_1": {
+      "initial_state_target_after_first_batch": 0.5904900000000002,
+      "errors_after_each_batch": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fixed_state_0": 0.5904900000000002
+    }
+  }
+}
