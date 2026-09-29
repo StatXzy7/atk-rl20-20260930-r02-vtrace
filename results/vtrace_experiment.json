@@ -1,0 +1,4596 @@
+{
+  "discount": 0.95,
+  "scenario_summary": {
+    "pi_equals_mu": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 12791,
+      "true_terminations": 1874,
+      "truncations": 526,
+      "initial_estimate_mean": 0.47848726022576155,
+      "initial_estimate_variance_across_seeds": 0.0019910045282140413,
+      "mean_rmse_to_target_fixed_point": 0.04880684586416931,
+      "mean_rmse_to_clipped_fixed_point": 0.04880684586416931,
+      "target_initial_value": 0.4706383462461242,
+      "behavior_initial_value": 0.4706383462461242,
+      "clipped_initial_value": 0.4706383462461242,
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "unclipped_lag": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 12791,
+      "true_terminations": 1874,
+      "truncations": 526,
+      "initial_estimate_mean": 1.505801100758812,
+      "initial_estimate_variance_across_seeds": 0.011141793916236925,
+      "mean_rmse_to_target_fixed_point": 0.04360219486812458,
+      "mean_rmse_to_clipped_fixed_point": 0.04360219486812458,
+      "target_initial_value": 1.4661095257597514,
+      "behavior_initial_value": 0.4706383462461242,
+      "clipped_initial_value": 1.4661095257597514,
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "clipped_counterexample": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 2400,
+      "true_terminations": 2400,
+      "truncations": 0,
+      "initial_estimate_mean": 0.0046875,
+      "initial_estimate_variance_across_seeds": 0.0007963423295454546,
+      "mean_rmse_to_target_fixed_point": 0.5953125,
+      "mean_rmse_to_clipped_fixed_point": 0.021354166666666664,
+      "target_initial_value": 0.6000000000000001,
+      "behavior_initial_value": -0.6000000000000001,
+      "clipped_initial_value": 0.0,
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ]
+    },
+    "extreme_lag_chain": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 9178,
+      "true_terminations": 2397,
+      "truncations": 3,
+      "initial_estimate_mean": 1.6433080044567356,
+      "initial_estimate_variance_across_seeds": 0.002507671214100594,
+      "mean_rmse_to_target_fixed_point": 0.13813906988318983,
+      "mean_rmse_to_clipped_fixed_point": 0.03269525332973528,
+      "target_initial_value": 1.4661095257597514,
+      "behavior_initial_value": 1.7253742869548752,
+      "clipped_initial_value": 1.6475429808707185,
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "missing_support_one_shot": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 2400,
+      "true_terminations": 2400,
+      "truncations": 0,
+      "initial_estimate_mean": -1.0,
+      "initial_estimate_variance_across_seeds": 0.0,
+      "mean_rmse_to_target_fixed_point": 1.6000000000000003,
+      "mean_rmse_to_clipped_fixed_point": 0.0,
+      "target_initial_value": 0.6000000000000001,
+      "behavior_initial_value": -1.0,
+      "clipped_initial_value": -1.0,
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ]
+    }
+  },
+  "counterexample_summary": {
+    "counterexample_unclipped": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 2400,
+      "true_terminations": 2400,
+      "truncations": 0,
+      "initial_estimate_mean": 0.5733333333333334,
+      "initial_estimate_variance_across_seeds": 0.002660606060606056,
+      "mean_rmse_to_target_fixed_point": 0.048333333333332736,
+      "mean_rmse_to_clipped_fixed_point": 0.048333333333332736,
+      "target_initial_value": 0.6000000000000001,
+      "behavior_initial_value": -0.6000000000000001,
+      "clipped_initial_value": 0.6000000000000001,
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ]
+    },
+    "clipped_counterexample": {
+      "seeds": 12,
+      "episodes_per_seed": 200,
+      "total_transitions": 2400,
+      "true_terminations": 2400,
+      "truncations": 0,
+      "initial_estimate_mean": 0.026041666666666668,
+      "initial_estimate_variance_across_seeds": 0.0010570549242424241,
+      "mean_rmse_to_target_fixed_point": 0.5739583333333333,
+      "mean_rmse_to_clipped_fixed_point": 0.029166666666666664,
+      "target_initial_value": 0.6000000000000001,
+      "behavior_initial_value": -0.6000000000000001,
+      "clipped_initial_value": 0.0,
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "c_fixed_point_and_convergence": [
+    {
+      "c_bar": 0.01,
+      "iterations_to_1e-10": 28,
+      "initial_fixed_value": 1.44119647026133,
+      "fixed_point_gap_at_initial": 3.749711652289989e-11
+    },
+    {
+      "c_bar": 0.25,
+      "iterations_to_1e-10": 22,
+      "initial_fixed_value": 1.4411964702751552,
+      "fixed_point_gap_at_initial": 2.3671953286452663e-11
+    },
+    {
+      "c_bar": 0.5,
+      "iterations_to_1e-10": 19,
+      "initial_fixed_value": 1.4411964702838336,
+      "fixed_point_gap_at_initial": 1.499356194756274e-11
+    },
+    {
+      "c_bar": 1.0,
+      "iterations_to_1e-10": 13,
+      "initial_fixed_value": 1.441196470278244,
+      "fixed_point_gap_at_initial": 2.0583090787340552e-11
+    }
+  ],
+  "c_finite_sample_variance": [
+    {
+      "c_bar": 0.01,
+      "rho_bar": 2.0,
+      "seeds": 10,
+      "episodes_per_seed": 200,
+      "total_transitions": 10680,
+      "initial_estimate_mean": 1.4438258241932804,
+      "initial_estimate_variance_across_seeds": 0.001030901635997407,
+      "initial_estimate_variance_within_seeds": 0.20844247354924308,
+      "clipped_initial_value": 1.4411964702988271,
+      "target_initial_value": 1.4661095257597514
+    },
+    {
+      "c_bar": 0.25,
+      "rho_bar": 2.0,
+      "seeds": 10,
+      "episodes_per_seed": 200,
+      "total_transitions": 10680,
+      "initial_estimate_mean": 1.4457765326980159,
+      "initial_estimate_variance_across_seeds": 0.001415505400358758,
+      "initial_estimate_variance_within_seeds": 0.21792758694225856,
+      "clipped_initial_value": 1.4411964702988271,
+      "target_initial_value": 1.4661095257597514
+    },
+    {
+      "c_bar": 0.5,
+      "rho_bar": 2.0,
+      "seeds": 10,
+      "episodes_per_seed": 200,
+      "total_transitions": 10680,
+      "initial_estimate_mean": 1.4483066137688225,
+      "initial_estimate_variance_across_seeds": 0.0015837895381655045,
+      "initial_estimate_variance_within_seeds": 0.2302245423838981,
+      "clipped_initial_value": 1.4411964702988271,
+      "target_initial_value": 1.4661095257597514
+    },
+    {
+      "c_bar": 1.0,
+      "rho_bar": 2.0,
+      "seeds": 10,
+      "episodes_per_seed": 200,
+      "total_transitions": 10680,
+      "initial_estimate_mean": 1.4543930416535276,
+      "initial_estimate_variance_across_seeds": 0.002282151065943554,
+      "initial_estimate_variance_within_seeds": 0.2884953390658123,
+      "clipped_initial_value": 1.4411964702988271,
+      "target_initial_value": 1.4661095257597514
+    }
+  ],
+  "batch_reference_equivalence": {
+    "max_target_gap": 0.0,
+    "max_advantage_gap": 0.0
+  },
+  "policy_lag_training": [
+    {
+      "iteration": 0,
+      "learner_version": 0,
+      "behavior_version": 0,
+      "exact_learner_initial_value": 0.7943578462395615
+    },
+    {
+      "iteration": 1,
+      "learner_version": 1,
+      "behavior_version": 0,
+      "exact_learner_initial_value": 1.1771343300133401
+    },
+    {
+      "iteration": 2,
+      "learner_version": 2,
+      "behavior_version": 0,
+      "exact_learner_initial_value": 1.4398771261647072
+    },
+    {
+      "iteration": 3,
+      "learner_version": 3,
+      "behavior_version": 1,
+      "exact_learner_initial_value": 1.5836547475663834
+    },
+    {
+      "iteration": 4,
+      "learner_version": 4,
+      "behavior_version": 2,
+      "exact_learner_initial_value": 1.6229273913846125
+    },
+    {
+      "iteration": 5,
+      "learner_version": 5,
+      "behavior_version": 3,
+      "exact_learner_initial_value": 1.6360402625478119
+    },
+    {
+      "iteration": 6,
+      "learner_version": 6,
+      "behavior_version": 4,
+      "exact_learner_initial_value": 1.6466492652326705
+    },
+    {
+      "iteration": 7,
+      "learner_version": 7,
+      "behavior_version": 5,
+      "exact_learner_initial_value": 1.6586630010219792
+    },
+    {
+      "iteration": 8,
+      "learner_version": 8,
+      "behavior_version": 6,
+      "exact_learner_initial_value": 1.6705309642230581
+    },
+    {
+      "iteration": 9,
+      "learner_version": 9,
+      "behavior_version": 7,
+      "exact_learner_initial_value": 1.6795921213069356
+    },
+    {
+      "iteration": 10,
+      "learner_version": 10,
+      "behavior_version": 8,
+      "exact_learner_initial_value": 1.6841319209089864
+    },
+    {
+      "iteration": 11,
+      "learner_version": 11,
+      "behavior_version": 9,
+      "exact_learner_initial_value": 1.6908995183988347
+    }
+  ],
+  "seed_rows": [
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1000,
+      "episodes": 200,
+      "transitions": 1112,
+      "true_terminations": 143,
+      "truncations": 57,
+      "visits": [
+        505.0,
+        274.0,
+        230.0,
+        103.0,
+        0.0
+      ],
+      "estimate": [
+        0.46991804941273846,
+        0.5278384236310005,
+        0.3663096006973004,
+        0.32167326700295085,
+        null
+      ],
+      "initial_mean": 0.43828871535231945,
+      "initial_variance": 0.3787511844048015,
+      "rmse_to_target_fixed_point": 0.02615437195251868,
+      "rmse_to_clipped_fixed_point": 0.02615437195251868,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1001,
+      "episodes": 200,
+      "transitions": 997,
+      "true_terminations": 169,
+      "truncations": 31,
+      "visits": [
+        415.0,
+        266.0,
+        218.0,
+        98.0,
+        0.0
+      ],
+      "estimate": [
+        0.42328987218347414,
+        0.5393976873407507,
+        0.37407830299441774,
+        0.3441949458396018,
+        null
+      ],
+      "initial_mean": 0.4630810532803144,
+      "initial_variance": 0.5306053610045856,
+      "rmse_to_target_fixed_point": 0.045664996908509864,
+      "rmse_to_clipped_fixed_point": 0.045664996908509864,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1002,
+      "episodes": 200,
+      "transitions": 1061,
+      "true_terminations": 163,
+      "truncations": 37,
+      "visits": [
+        477.0,
+        261.0,
+        202.0,
+        121.0,
+        0.0
+      ],
+      "estimate": [
+        0.5126968004574534,
+        0.5662556297112397,
+        0.4252586465529055,
+        0.30540354855443763,
+        null
+      ],
+      "initial_mean": 0.49649875421141654,
+      "initial_variance": 0.5052500382638391,
+      "rmse_to_target_fixed_point": 0.05830882619181614,
+      "rmse_to_clipped_fixed_point": 0.05830882619181614,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1003,
+      "episodes": 200,
+      "transitions": 1165,
+      "true_terminations": 145,
+      "truncations": 55,
+      "visits": [
+        486.0,
+        337.0,
+        242.0,
+        100.0,
+        0.0
+      ],
+      "estimate": [
+        0.4580075782014336,
+        0.5607239968995693,
+        0.42324204903238183,
+        0.30823883377955524,
+        null
+      ],
+      "initial_mean": 0.5123971155627148,
+      "initial_variance": 0.4740667173308113,
+      "rmse_to_target_fixed_point": 0.052524210174258776,
+      "rmse_to_clipped_fixed_point": 0.052524210174258776,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1004,
+      "episodes": 200,
+      "transitions": 1031,
+      "true_terminations": 155,
+      "truncations": 45,
+      "visits": [
+        436.0,
+        293.0,
+        205.0,
+        97.0,
+        0.0
+      ],
+      "estimate": [
+        0.44006383615416156,
+        0.4768335965617765,
+        0.3451878510478232,
+        0.24436232630873372,
+        null
+      ],
+      "initial_mean": 0.4082158744072629,
+      "initial_variance": 0.37757090585784864,
+      "rmse_to_target_fixed_point": 0.02770717147042885,
+      "rmse_to_clipped_fixed_point": 0.02770717147042885,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1005,
+      "episodes": 200,
+      "transitions": 1060,
+      "true_terminations": 160,
+      "truncations": 40,
+      "visits": [
+        452.0,
+        283.0,
+        218.0,
+        107.0,
+        0.0
+      ],
+      "estimate": [
+        0.5232803329165521,
+        0.40861930331882057,
+        0.3122741683351691,
+        0.26784819983865854,
+        null
+      ],
+      "initial_mean": 0.45040373984544707,
+      "initial_variance": 0.3980738692549165,
+      "rmse_to_target_fixed_point": 0.05422581659210836,
+      "rmse_to_clipped_fixed_point": 0.05422581659210836,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1006,
+      "episodes": 200,
+      "transitions": 1053,
+      "true_terminations": 159,
+      "truncations": 41,
+      "visits": [
+        412.0,
+        287.0,
+        232.0,
+        122.0,
+        0.0
+      ],
+      "estimate": [
+        0.43942991696733014,
+        0.5565323949946388,
+        0.3071896339788444,
+        0.24980612786144257,
+        null
+      ],
+      "initial_mean": 0.48693662773080276,
+      "initial_variance": 0.43442392688900866,
+      "rmse_to_target_fixed_point": 0.04303944866453283,
+      "rmse_to_clipped_fixed_point": 0.04303944866453283,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1007,
+      "episodes": 200,
+      "transitions": 1051,
+      "true_terminations": 156,
+      "truncations": 44,
+      "visits": [
+        440.0,
+        283.0,
+        207.0,
+        121.0,
+        0.0
+      ],
+      "estimate": [
+        0.4851837407181531,
+        0.5794302700942202,
+        0.4008785806785696,
+        0.32109034816492166,
+        null
+      ],
+      "initial_mean": 0.5281556138858825,
+      "initial_variance": 0.4810297218334544,
+      "rmse_to_target_fixed_point": 0.05378747122577738,
+      "rmse_to_clipped_fixed_point": 0.05378747122577738,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1008,
+      "episodes": 200,
+      "transitions": 1109,
+      "true_terminations": 147,
+      "truncations": 53,
+      "visits": [
+        426.0,
+        300.0,
+        254.0,
+        129.0,
+        0.0
+      ],
+      "estimate": [
+        0.5729132227206937,
+        0.5716850342705628,
+        0.3859254924385558,
+        0.24519805915232745,
+        null
+      ],
+      "initial_mean": 0.5664726135494206,
+      "initial_variance": 0.38837298906479084,
+      "rmse_to_target_fixed_point": 0.07006446670086162,
+      "rmse_to_clipped_fixed_point": 0.07006446670086162,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1009,
+      "episodes": 200,
+      "transitions": 1046,
+      "true_terminations": 152,
+      "truncations": 48,
+      "visits": [
+        415.0,
+        278.0,
+        253.0,
+        100.0,
+        0.0
+      ],
+      "estimate": [
+        0.4785823776603129,
+        0.5116942425293449,
+        0.29600229015585255,
+        0.33323392644297667,
+        null
+      ],
+      "initial_mean": 0.47055974044302945,
+      "initial_variance": 0.48813940443624426,
+      "rmse_to_target_fixed_point": 0.0348561120973045,
+      "rmse_to_clipped_fixed_point": 0.0348561120973045,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1010,
+      "episodes": 200,
+      "transitions": 1020,
+      "true_terminations": 170,
+      "truncations": 30,
+      "visits": [
+        435.0,
+        249.0,
+        228.0,
+        108.0,
+        0.0
+      ],
+      "estimate": [
+        0.3445084614046396,
+        0.4740816665357356,
+        0.32783461996709456,
+        0.3535466430355949,
+        null
+      ],
+      "initial_mean": 0.429995157874307,
+      "initial_variance": 0.4744336859764919,
+      "rmse_to_target_fixed_point": 0.07272302207539015,
+      "rmse_to_clipped_fixed_point": 0.07272302207539015,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "pi_equals_mu",
+      "seed": 1011,
+      "episodes": 200,
+      "transitions": 1086,
+      "true_terminations": 155,
+      "truncations": 45,
+      "visits": [
+        435.0,
+        292.0,
+        227.0,
+        132.0,
+        0.0
+      ],
+      "estimate": [
+        0.41611987120523714,
+        0.5315662278618639,
+        0.39984643768196537,
+        0.32379149568529547,
+        null
+      ],
+      "initial_mean": 0.4908421165662209,
+      "initial_variance": 0.47860775277037415,
+      "rmse_to_target_fixed_point": 0.046626236316524516,
+      "rmse_to_clipped_fixed_point": 0.046626236316524516,
+      "exact_target": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1000,
+      "episodes": 200,
+      "transitions": 1112,
+      "true_terminations": 143,
+      "truncations": 57,
+      "visits": [
+        505.0,
+        274.0,
+        230.0,
+        103.0,
+        0.0
+      ],
+      "estimate": [
+        1.5392101670113154,
+        1.263586738865478,
+        1.0083364742841217,
+        0.5821323605363005,
+        null
+      ],
+      "initial_mean": 1.4356385282307587,
+      "initial_variance": 0.44514361463357893,
+      "rmse_to_target_fixed_point": 0.045273588629993984,
+      "rmse_to_clipped_fixed_point": 0.045273588629993984,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1001,
+      "episodes": 200,
+      "transitions": 997,
+      "true_terminations": 169,
+      "truncations": 31,
+      "visits": [
+        415.0,
+        266.0,
+        218.0,
+        98.0,
+        0.0
+      ],
+      "estimate": [
+        1.5150724827868418,
+        1.2540174957961043,
+        1.0208208530652685,
+        0.5497009443652328,
+        null
+      ],
+      "initial_mean": 1.4705551095685179,
+      "initial_variance": 1.1787732009100857,
+      "rmse_to_target_fixed_point": 0.031006254927187844,
+      "rmse_to_clipped_fixed_point": 0.031006254927187844,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1002,
+      "episodes": 200,
+      "transitions": 1061,
+      "true_terminations": 163,
+      "truncations": 37,
+      "visits": [
+        477.0,
+        261.0,
+        202.0,
+        121.0,
+        0.0
+      ],
+      "estimate": [
+        1.5395522977004759,
+        1.2704018359736615,
+        0.9328367677087104,
+        0.5290921222960981,
+        null
+      ],
+      "initial_mean": 1.6527597633917706,
+      "initial_variance": 4.568029863490588,
+      "rmse_to_target_fixed_point": 0.04769231462522771,
+      "rmse_to_clipped_fixed_point": 0.04769231462522771,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1003,
+      "episodes": 200,
+      "transitions": 1165,
+      "true_terminations": 145,
+      "truncations": 55,
+      "visits": [
+        486.0,
+        337.0,
+        242.0,
+        100.0,
+        0.0
+      ],
+      "estimate": [
+        1.5089452366402947,
+        1.3022261217551876,
+        1.1057626814314008,
+        0.5378391935772836,
+        null
+      ],
+      "initial_mean": 1.5804697543683517,
+      "initial_variance": 1.0251694414959505,
+      "rmse_to_target_fixed_point": 0.07003608315995939,
+      "rmse_to_clipped_fixed_point": 0.07003608315995939,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1004,
+      "episodes": 200,
+      "transitions": 1031,
+      "true_terminations": 155,
+      "truncations": 45,
+      "visits": [
+        436.0,
+        293.0,
+        205.0,
+        97.0,
+        0.0
+      ],
+      "estimate": [
+        1.3428769627516481,
+        1.1432567761892647,
+        0.9527784777791289,
+        0.5092837616026117,
+        null
+      ],
+      "initial_mean": 1.3506433212336333,
+      "initial_variance": 1.1088760330229703,
+      "rmse_to_target_fixed_point": 0.08224805650824003,
+      "rmse_to_clipped_fixed_point": 0.08224805650824003,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1005,
+      "episodes": 200,
+      "transitions": 1060,
+      "true_terminations": 160,
+      "truncations": 40,
+      "visits": [
+        452.0,
+        283.0,
+        218.0,
+        107.0,
+        0.0
+      ],
+      "estimate": [
+        1.4229522539106012,
+        1.1950886192478944,
+        0.9746033419279992,
+        0.5216581020303502,
+        null
+      ],
+      "initial_mean": 1.4346294626215057,
+      "initial_variance": 1.3997271006761487,
+      "rmse_to_target_fixed_point": 0.033727377181652286,
+      "rmse_to_clipped_fixed_point": 0.033727377181652286,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1006,
+      "episodes": 200,
+      "transitions": 1053,
+      "true_terminations": 159,
+      "truncations": 41,
+      "visits": [
+        412.0,
+        287.0,
+        232.0,
+        122.0,
+        0.0
+      ],
+      "estimate": [
+        1.5281030572724328,
+        1.2911810734237887,
+        1.0073757941771682,
+        0.5211725269146873,
+        null
+      ],
+      "initial_mean": 1.6387456956118631,
+      "initial_variance": 2.4235568854124736,
+      "rmse_to_target_fixed_point": 0.041555991217802735,
+      "rmse_to_clipped_fixed_point": 0.041555991217802735,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1007,
+      "episodes": 200,
+      "transitions": 1051,
+      "true_terminations": 156,
+      "truncations": 44,
+      "visits": [
+        440.0,
+        283.0,
+        207.0,
+        121.0,
+        0.0
+      ],
+      "estimate": [
+        1.4659713783587227,
+        1.2492832202907025,
+        0.9787586949102407,
+        0.5255876548634427,
+        null
+      ],
+      "initial_mean": 1.412112518519101,
+      "initial_variance": 1.014054089170719,
+      "rmse_to_target_fixed_point": 0.00798535981460878,
+      "rmse_to_clipped_fixed_point": 0.00798535981460878,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1008,
+      "episodes": 200,
+      "transitions": 1109,
+      "true_terminations": 147,
+      "truncations": 53,
+      "visits": [
+        426.0,
+        300.0,
+        254.0,
+        129.0,
+        0.0
+      ],
+      "estimate": [
+        1.4823187801038435,
+        1.2929108494600963,
+        1.031197244460897,
+        0.5198437217802173,
+        null
+      ],
+      "initial_mean": 1.5093415538222077,
+      "initial_variance": 1.0856261041900002,
+      "rmse_to_target_fixed_point": 0.03575283440595025,
+      "rmse_to_clipped_fixed_point": 0.03575283440595025,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1009,
+      "episodes": 200,
+      "transitions": 1046,
+      "true_terminations": 152,
+      "truncations": 48,
+      "visits": [
+        415.0,
+        278.0,
+        253.0,
+        100.0,
+        0.0
+      ],
+      "estimate": [
+        1.5582461305058526,
+        1.358694192304484,
+        1.0115105499249173,
+        0.5708052462694365,
+        null
+      ],
+      "initial_mean": 1.6744847026730871,
+      "initial_variance": 1.566092721577039,
+      "rmse_to_target_fixed_point": 0.07683729622773172,
+      "rmse_to_clipped_fixed_point": 0.07683729622773172,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1010,
+      "episodes": 200,
+      "transitions": 1020,
+      "true_terminations": 170,
+      "truncations": 30,
+      "visits": [
+        435.0,
+        249.0,
+        228.0,
+        108.0,
+        0.0
+      ],
+      "estimate": [
+        1.4202223353016672,
+        1.2543178460719997,
+        0.9667485070174685,
+        0.5403217514271781,
+        null
+      ],
+      "initial_mean": 1.4587691820747013,
+      "initial_variance": 1.31725801287303,
+      "rmse_to_target_fixed_point": 0.02562627492666538,
+      "rmse_to_clipped_fixed_point": 0.02562627492666538,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "unclipped_lag",
+      "seed": 1011,
+      "episodes": 200,
+      "transitions": 1086,
+      "true_terminations": 155,
+      "truncations": 45,
+      "visits": [
+        435.0,
+        292.0,
+        227.0,
+        132.0,
+        0.0
+      ],
+      "estimate": [
+        1.4230121755148768,
+        1.2563555389995327,
+        0.9631012405308038,
+        0.5422148128969915,
+        null
+      ],
+      "initial_mean": 1.4514636169902457,
+      "initial_variance": 0.8071553516686214,
+      "rmse_to_target_fixed_point": 0.02548490679247492,
+      "rmse_to_clipped_fixed_point": 0.02548490679247492,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        0.4706383462461242,
+        0.49578727135882605,
+        0.34458664826949126,
+        0.2865090403337971,
+        0.0
+      ],
+      "exact_clipped": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1000,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.05,
+        null
+      ],
+      "initial_mean": 0.05,
+      "initial_variance": 0.2864321608040201,
+      "rmse_to_target_fixed_point": 0.55,
+      "rmse_to_clipped_fixed_point": 0.05,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1001,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.00625,
+        null
+      ],
+      "initial_mean": 0.00625,
+      "initial_variance": 0.25592807788944716,
+      "rmse_to_target_fixed_point": 0.5937500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1002,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.0,
+        null
+      ],
+      "initial_mean": 0.0,
+      "initial_variance": 0.25125628140703515,
+      "rmse_to_target_fixed_point": 0.6000000000000001,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1003,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.0375,
+        null
+      ],
+      "initial_mean": -0.0375,
+      "initial_variance": 0.22157663316582915,
+      "rmse_to_target_fixed_point": 0.6375000000000001,
+      "rmse_to_clipped_fixed_point": 0.0375,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1004,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.00625,
+        null
+      ],
+      "initial_mean": -0.00625,
+      "initial_variance": 0.24650596733668348,
+      "rmse_to_target_fixed_point": 0.6062500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1005,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.00625,
+        null
+      ],
+      "initial_mean": 0.00625,
+      "initial_variance": 0.25592807788944716,
+      "rmse_to_target_fixed_point": 0.5937500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1006,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.025,
+        null
+      ],
+      "initial_mean": 0.025,
+      "initial_variance": 0.2694723618090452,
+      "rmse_to_target_fixed_point": 0.5750000000000001,
+      "rmse_to_clipped_fixed_point": 0.025,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1007,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.04375,
+        null
+      ],
+      "initial_mean": -0.04375,
+      "initial_variance": 0.21635521356783916,
+      "rmse_to_target_fixed_point": 0.64375,
+      "rmse_to_clipped_fixed_point": 0.04375,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1008,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.0375,
+        null
+      ],
+      "initial_mean": 0.0375,
+      "initial_variance": 0.27810929648241206,
+      "rmse_to_target_fixed_point": 0.5625000000000001,
+      "rmse_to_clipped_fixed_point": 0.0375,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1009,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.03125,
+        null
+      ],
+      "initial_mean": 0.03125,
+      "initial_variance": 0.2738300879396985,
+      "rmse_to_target_fixed_point": 0.5687500000000001,
+      "rmse_to_clipped_fixed_point": 0.03125,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1010,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.00625,
+        null
+      ],
+      "initial_mean": -0.00625,
+      "initial_variance": 0.24650596733668345,
+      "rmse_to_target_fixed_point": 0.6062500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 1011,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.00625,
+        null
+      ],
+      "initial_mean": -0.00625,
+      "initial_variance": 0.24650596733668348,
+      "rmse_to_target_fixed_point": 0.6062500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1000,
+      "episodes": 200,
+      "transitions": 795,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        221.0,
+        217.0,
+        193.0,
+        164.0,
+        0.0
+      ],
+      "estimate": [
+        1.7136848614445377,
+        1.432827375325982,
+        1.0757971937618367,
+        0.5867505553668001,
+        null
+      ],
+      "initial_mean": 1.7313548087376625,
+      "initial_variance": 0.20213386624419427,
+      "rmse_to_target_fixed_point": 0.1641331747175126,
+      "rmse_to_clipped_fixed_point": 0.03790117956500326,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1001,
+      "episodes": 200,
+      "transitions": 731,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        220.0,
+        200.0,
+        163.0,
+        148.0,
+        0.0
+      ],
+      "estimate": [
+        1.5751082157141234,
+        1.375531696614925,
+        1.0827638861406101,
+        0.6416597488788721,
+        null
+      ],
+      "initial_mean": 1.5816784899148748,
+      "initial_variance": 0.38776402582369834,
+      "rmse_to_target_fixed_point": 0.11125812502642189,
+      "rmse_to_clipped_fixed_point": 0.04278668787152112,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1002,
+      "episodes": 200,
+      "transitions": 774,
+      "true_terminations": 199,
+      "truncations": 1,
+      "visits": [
+        233.0,
+        201.0,
+        190.0,
+        150.0,
+        0.0
+      ],
+      "estimate": [
+        1.6314698468942257,
+        1.4320254588066001,
+        1.1274783417176737,
+        0.616097657698142,
+        null
+      ],
+      "initial_mean": 1.65611932000875,
+      "initial_variance": 0.244520205691809,
+      "rmse_to_target_fixed_point": 0.14928135183500135,
+      "rmse_to_clipped_fixed_point": 0.02395317861804776,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1003,
+      "episodes": 200,
+      "transitions": 795,
+      "true_terminations": 199,
+      "truncations": 1,
+      "visits": [
+        230.0,
+        211.0,
+        185.0,
+        169.0,
+        0.0
+      ],
+      "estimate": [
+        1.650409350503046,
+        1.420581557402665,
+        1.1064535820349353,
+        0.6235528602486062,
+        null
+      ],
+      "initial_mean": 1.646708312285471,
+      "initial_variance": 0.3699599893146218,
+      "rmse_to_target_fixed_point": 0.14772423414015198,
+      "rmse_to_clipped_fixed_point": 0.012438105004467261,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1004,
+      "episodes": 200,
+      "transitions": 749,
+      "true_terminations": 199,
+      "truncations": 1,
+      "visits": [
+        226.0,
+        217.0,
+        165.0,
+        141.0,
+        0.0
+      ],
+      "estimate": [
+        1.6111957476812189,
+        1.322747592568629,
+        1.03046761278937,
+        0.5657604304478138,
+        null
+      ],
+      "initial_mean": 1.613358940600943,
+      "initial_variance": 0.22002258847773692,
+      "rmse_to_target_fixed_point": 0.0868159867359585,
+      "rmse_to_clipped_fixed_point": 0.059361857166755565,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1005,
+      "episodes": 200,
+      "transitions": 770,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        223.0,
+        212.0,
+        169.0,
+        166.0,
+        0.0
+      ],
+      "estimate": [
+        1.6103656930717247,
+        1.379962417204302,
+        1.1068934851772372,
+        0.5931770866254445,
+        null
+      ],
+      "initial_mean": 1.5989748794341134,
+      "initial_variance": 0.4402817392616687,
+      "rmse_to_target_fixed_point": 0.11956070978207863,
+      "rmse_to_clipped_fixed_point": 0.026282853233920357,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1006,
+      "episodes": 200,
+      "transitions": 734,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        217.0,
+        193.0,
+        176.0,
+        148.0,
+        0.0
+      ],
+      "estimate": [
+        1.5985408007394808,
+        1.4515394067038072,
+        1.0860411886094494,
+        0.6558231597392495,
+        null
+      ],
+      "initial_mean": 1.6028868034026937,
+      "initial_variance": 0.34449341255766974,
+      "rmse_to_target_fixed_point": 0.14568533903332972,
+      "rmse_to_clipped_fixed_point": 0.039898825968854024,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1007,
+      "episodes": 200,
+      "transitions": 780,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        228.0,
+        201.0,
+        183.0,
+        168.0,
+        0.0
+      ],
+      "estimate": [
+        1.6778433245707423,
+        1.4081957242027865,
+        1.0712153825553454,
+        0.6171099298071763,
+        null
+      ],
+      "initial_mean": 1.659397836553141,
+      "initial_variance": 0.3383548337066605,
+      "rmse_to_target_fixed_point": 0.14630665552297625,
+      "rmse_to_clipped_fixed_point": 0.018053520368700476,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1008,
+      "episodes": 200,
+      "transitions": 798,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        212.0,
+        222.0,
+        197.0,
+        167.0,
+        0.0
+      ],
+      "estimate": [
+        1.7320187992805827,
+        1.4476593009731824,
+        1.0910990293047158,
+        0.5999751959317907,
+        null
+      ],
+      "initial_mean": 1.7310755180574267,
+      "initial_variance": 0.22667514361071794,
+      "rmse_to_target_fixed_point": 0.1785095396938369,
+      "rmse_to_clipped_fixed_point": 0.046958745649836806,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1009,
+      "episodes": 200,
+      "transitions": 756,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        227.0,
+        198.0,
+        176.0,
+        155.0,
+        0.0
+      ],
+      "estimate": [
+        1.608656006830805,
+        1.4338318969404427,
+        1.093782923476761,
+        0.6468404625081321,
+        null
+      ],
+      "initial_mean": 1.6460945469595993,
+      "initial_variance": 0.353535108623555,
+      "rmse_to_target_fixed_point": 0.14157103828314366,
+      "rmse_to_clipped_fixed_point": 0.029662997332242872,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1010,
+      "episodes": 200,
+      "transitions": 731,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        226.0,
+        191.0,
+        166.0,
+        148.0,
+        0.0
+      ],
+      "estimate": [
+        1.6062945278356286,
+        1.3829771759919751,
+        1.064208168698347,
+        0.6287696759276841,
+        null
+      ],
+      "initial_mean": 1.5886421357755387,
+      "initial_variance": 0.3193852511204856,
+      "rmse_to_target_fixed_point": 0.11573458294832145,
+      "rmse_to_clipped_fixed_point": 0.028777085941477498,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "extreme_lag_chain",
+      "seed": 1011,
+      "episodes": 200,
+      "transitions": 765,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        222.0,
+        213.0,
+        167.0,
+        163.0,
+        0.0
+      ],
+      "estimate": [
+        1.6657175273451132,
+        1.390674254434572,
+        1.1241279707446081,
+        0.6411741033168407,
+        null
+      ],
+      "initial_mean": 1.6634044617506123,
+      "initial_variance": 0.2207184809187187,
+      "rmse_to_target_fixed_point": 0.15108810087954497,
+      "rmse_to_clipped_fixed_point": 0.026268003235996346,
+      "exact_target": [
+        1.4661095257597514,
+        1.2428393723862778,
+        0.986353829642716,
+        0.5380710659898478,
+        0.0
+      ],
+      "exact_behavior": [
+        1.7253742869548752,
+        1.4796872004180965,
+        1.1330131640378063,
+        0.6418124462288501,
+        0.0
+      ],
+      "exact_clipped": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.1814334551109671,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        1.6475429808707185,
+        1.4080053045256078,
+        1.089690643236188,
+        0.6104589114194239,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1000,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1001,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1002,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1003,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1004,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1005,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1006,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1007,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1008,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1009,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1010,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "missing_support_one_shot",
+      "seed": 1011,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -1.0,
+        null
+      ],
+      "initial_mean": -1.0,
+      "initial_variance": 0.0,
+      "rmse_to_target_fixed_point": 1.6,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -1.0,
+        0.0
+      ],
+      "exact_clipped": [
+        -1.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -1.6,
+      "full_action_support": false,
+      "unsupported_mass": [
+        0.8,
+        0.0
+      ],
+      "state_values": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2000,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.6300000000000021,
+        null
+      ],
+      "initial_mean": 0.63,
+      "initial_variance": 0.6784924623115577,
+      "rmse_to_target_fixed_point": 0.030000000000002025,
+      "rmse_to_clipped_fixed_point": 0.030000000000002025,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3000,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.01875,
+        null
+      ],
+      "initial_mean": 0.01875,
+      "initial_variance": 0.26503611809045224,
+      "rmse_to_target_fixed_point": 0.58125,
+      "rmse_to_clipped_fixed_point": 0.01875,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2001,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.570000000000002,
+        null
+      ],
+      "initial_mean": 0.57,
+      "initial_variance": 0.6061306532663316,
+      "rmse_to_target_fixed_point": 0.02999999999999814,
+      "rmse_to_clipped_fixed_point": 0.02999999999999814,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3001,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.05625,
+        null
+      ],
+      "initial_mean": 0.05625,
+      "initial_variance": 0.29047581658291455,
+      "rmse_to_target_fixed_point": 0.5437500000000001,
+      "rmse_to_clipped_fixed_point": 0.05625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2002,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.520000000000002,
+        null
+      ],
+      "initial_mean": 0.52,
+      "initial_variance": 0.5403015075376882,
+      "rmse_to_target_fixed_point": 0.07999999999999807,
+      "rmse_to_clipped_fixed_point": 0.07999999999999807,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3002,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.0875,
+        null
+      ],
+      "initial_mean": 0.0875,
+      "initial_variance": 0.30951633165829145,
+      "rmse_to_target_fixed_point": 0.5125000000000001,
+      "rmse_to_clipped_fixed_point": 0.0875,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2003,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.5700000000000017,
+        null
+      ],
+      "initial_mean": 0.57,
+      "initial_variance": 0.6061306532663316,
+      "rmse_to_target_fixed_point": 0.02999999999999836,
+      "rmse_to_clipped_fixed_point": 0.02999999999999836,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3003,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.00625,
+        null
+      ],
+      "initial_mean": 0.00625,
+      "initial_variance": 0.25592807788944716,
+      "rmse_to_target_fixed_point": 0.5937500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2004,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.6900000000000013,
+        null
+      ],
+      "initial_mean": 0.6899999999999998,
+      "initial_variance": 0.7436180904522611,
+      "rmse_to_target_fixed_point": 0.09000000000000119,
+      "rmse_to_clipped_fixed_point": 0.09000000000000119,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3004,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.00625,
+        null
+      ],
+      "initial_mean": -0.00625,
+      "initial_variance": 0.24650596733668345,
+      "rmse_to_target_fixed_point": 0.6062500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2005,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.560000000000002,
+        null
+      ],
+      "initial_mean": 0.56,
+      "initial_variance": 0.5933668341708541,
+      "rmse_to_target_fixed_point": 0.03999999999999804,
+      "rmse_to_clipped_fixed_point": 0.03999999999999804,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3005,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.0,
+        null
+      ],
+      "initial_mean": 0.0,
+      "initial_variance": 0.25125628140703515,
+      "rmse_to_target_fixed_point": 0.6000000000000001,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2006,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.5100000000000018,
+        null
+      ],
+      "initial_mean": 0.51,
+      "initial_variance": 0.5265326633165828,
+      "rmse_to_target_fixed_point": 0.0899999999999983,
+      "rmse_to_clipped_fixed_point": 0.0899999999999983,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3006,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.0,
+        null
+      ],
+      "initial_mean": 0.0,
+      "initial_variance": 0.25125628140703515,
+      "rmse_to_target_fixed_point": 0.6000000000000001,
+      "rmse_to_clipped_fixed_point": 0.0,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2007,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.610000000000002,
+        null
+      ],
+      "initial_mean": 0.61,
+      "initial_variance": 0.6551758793969847,
+      "rmse_to_target_fixed_point": 0.010000000000001896,
+      "rmse_to_clipped_fixed_point": 0.010000000000001896,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3007,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.05,
+        null
+      ],
+      "initial_mean": 0.05,
+      "initial_variance": 0.28643216080402006,
+      "rmse_to_target_fixed_point": 0.55,
+      "rmse_to_clipped_fixed_point": 0.05,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2008,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.6000000000000021,
+        null
+      ],
+      "initial_mean": 0.6,
+      "initial_variance": 0.6432160804020098,
+      "rmse_to_target_fixed_point": 1.9984014443252818e-15,
+      "rmse_to_clipped_fixed_point": 1.9984014443252818e-15,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3008,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.0625,
+        null
+      ],
+      "initial_mean": 0.0625,
+      "initial_variance": 0.29444095477386933,
+      "rmse_to_target_fixed_point": 0.5375000000000001,
+      "rmse_to_clipped_fixed_point": 0.0625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2009,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.5400000000000019,
+        null
+      ],
+      "initial_mean": 0.54,
+      "initial_variance": 0.5672361809045224,
+      "rmse_to_target_fixed_point": 0.059999999999998166,
+      "rmse_to_clipped_fixed_point": 0.059999999999998166,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3009,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.00625,
+        null
+      ],
+      "initial_mean": 0.00625,
+      "initial_variance": 0.25592807788944716,
+      "rmse_to_target_fixed_point": 0.5937500000000001,
+      "rmse_to_clipped_fixed_point": 0.00625,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2010,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.5400000000000016,
+        null
+      ],
+      "initial_mean": 0.54,
+      "initial_variance": 0.5672361809045225,
+      "rmse_to_target_fixed_point": 0.0599999999999985,
+      "rmse_to_clipped_fixed_point": 0.0599999999999985,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3010,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        -0.0125,
+        null
+      ],
+      "initial_mean": -0.0125,
+      "initial_variance": 0.24167713567839202,
+      "rmse_to_target_fixed_point": 0.6125,
+      "rmse_to_clipped_fixed_point": 0.0125,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "counterexample_unclipped",
+      "seed": 2011,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.5400000000000019,
+        null
+      ],
+      "initial_mean": 0.54,
+      "initial_variance": 0.5672361809045224,
+      "rmse_to_target_fixed_point": 0.059999999999998166,
+      "rmse_to_clipped_fixed_point": 0.059999999999998166,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.6000000000000001,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": 0.0,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.6000000000000001,
+        0.0
+      ]
+    },
+    {
+      "scenario": "clipped_counterexample",
+      "seed": 3011,
+      "episodes": 200,
+      "transitions": 200,
+      "true_terminations": 200,
+      "truncations": 0,
+      "visits": [
+        200.0,
+        0.0
+      ],
+      "estimate": [
+        0.04375,
+        null
+      ],
+      "initial_mean": 0.04375,
+      "initial_variance": 0.28230998743718594,
+      "rmse_to_target_fixed_point": 0.5562500000000001,
+      "rmse_to_clipped_fixed_point": 0.04375,
+      "exact_target": [
+        0.6000000000000001,
+        0.0
+      ],
+      "exact_behavior": [
+        -0.6000000000000001,
+        0.0
+      ],
+      "exact_clipped": [
+        0.0,
+        0.0
+      ],
+      "fixed_point_bias_at_initial": -0.6000000000000001,
+      "full_action_support": true,
+      "unsupported_mass": [
+        0.0,
+        0.0
+      ],
+      "state_values": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}
